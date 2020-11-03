@@ -10,6 +10,13 @@
 	<div class="container">
 		<div id="app">
 			<h1>{{ title }}</h1>
+			<div class="form-inline mb-2">
+				<div class="form-group mr-2">
+					<input type="text" class="form-control" placeholder="Añade tu fruta favorita" v-model="newFruit">
+				</div>
+				<button class="btn btn-primary" v-on:click="addFruit">Añadir Fruta</button>
+			</div>
+
 			<ul class="pl-0">
 				<li v-for="fruit of fruits" class="list-unstyled">
 					<strong>Nombre</strong>: {{fruit.name}} <small v-if="fruit.amount>10" class="text-success">Mucha cantidad</small><small v-if="fruit.amount<10 && fruit.amount!=0" class="text-warning">Poca cantidad</small><small v-if="fruit.amount===0" class="text-danger">Sin suministro</small>
