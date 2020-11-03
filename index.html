@@ -10,9 +10,9 @@
 	<div class="container">
 		<div id="app">
 			<h1>{{ title }}</h1>
-			<ul class="list-inline">
-				<li class="list-inline-item" v-for="fruit of fruits">
-					{{fruit}}
+			<ul class="pl-0">
+				<li v-for="fruit of fruits" class="list-unstyled">
+					<strong>Nombre</strong>: {{fruit.name}} <small v-if="fruit.amount>10" class="text-success">Mucha cantidad</small><small v-if="fruit.amount<10 && fruit.amount!=0" class="text-warning">Poca cantidad</small><small v-if="fruit.amount===0" class="text-danger">Sin suministro</small>
 				</li>
 			</ul>
 		</div>

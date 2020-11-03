@@ -2,6 +2,10 @@
 		el: '#app',
 		data: {
 			title: 'Rubén Casalta con Vue.js',
-			fruits: ['Manzana','Pera','Platano']
+			fruits: [
+				{name:'Manzana',amount:3},
+				{name:'Pera',amount:0},
+				{name:'Platano',amount:45},
+			]
 		}
 	});
