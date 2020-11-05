@@ -37,7 +37,7 @@
 	var apTres = new Vue({
 		el: '#app-3',
 		data: {
-			msg: "Todo lo que se escribe es invertido",
+			msg: "Hic sunt dracones",
 			count: 0
 		},
 		computed: {
