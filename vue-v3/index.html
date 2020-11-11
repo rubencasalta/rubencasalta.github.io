@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicios con Vue v3</title>
+  <link href="assets/css/theme.min.css" rel="stylesheet">
+</head>
+<body>
+
+		<div class="container pt-5">
+			<div id="bind-attribute">
+				<span v-bind:class="colorClass">
+					Este texto cambia de color al seleccionarlo en el listado de abajo.
+				</span>
+				<select class="form-control my-3" v-on:click="changeColor">
+					<option value="bg-primary">Azul</option>
+					<option value="bg-danger">Rojo</option>
+					<option value="bg-warning">Amarillo</option>
+					<option value="bg-dark">Negro</option>
+				</select>
+			</div>
+		</div>
+
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	<script src="https://unpkg.com/vue@next"></script>
+	<script src="assets/js/theme.js"></script>
+</body>
+</html>
